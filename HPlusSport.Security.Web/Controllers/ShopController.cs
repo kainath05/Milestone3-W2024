@@ -9,12 +9,11 @@ namespace HPlusSport.Security.Web.Controllers;
 * Assessment: 	Milestone 3
 * Created by: 	Kainath Ahmed - 2268774
 * Date: 		<11> <November> 2024
-* Class Name: 	HomeController.cs
-* Description: 	Explain what the class stores and its functionality. 
-* Time Task B):	Record how long did this tutorial take you to do without breaks, in hours. 
+* Class Name: 	ShopController.cs
+* Description:  Controls the shopping for the user like order and adding to cart. 
 */
 [Authorize]
-[IgnoreAntiforgeryToken(Order = 1001)]
+//[IgnoreAntiforgeryToken(Order = 1001)]
 public class ShopController : Controller
 {
     private readonly ShopContext _context;

@@ -9,7 +9,7 @@ namespace HPlusSport.Security.Web.Controllers;
 * Created by: 	Kainath Ahmed - 2268774
 * Date: 		<11> <November> 2024
 * Class Name: 	HomeController.cs
-* Description: 	Explain what the class stores and its functionality. 
+* Description: 	Shows the home page. 
 * Time Task B):	Record how long did this tutorial take you to do without breaks, in hours. 
 */
 
