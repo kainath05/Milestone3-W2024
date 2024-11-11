@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HPlusSport.Security.Web.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -127,8 +127,8 @@ namespace HPlusSport.Security.Web.Migrations
                 columns: new[] { "Id", "Email", "Hash", "Password", "Salt" },
                 values: new object[,]
                 {
-                    { 1, "adam@example.com", "", "Adam's secret", "" },
-                    { 2, "barbara@example.com", "", "b@rb@r@", "" }
+                    { 1, "adam@example.com", "9/c9P4LI5SRSWkkSZ/pQNvjqdYQ=", "", "kWGmmXe4b9nq/98RC+chuWEynR2IoWxIHCf8rPHOI7E=" },
+                    { 2, "barbara@example.com", "VFRQSPPHb8SGZPkyUAXyIs95kU4=", "", "F4+UD/kIzfT1Yox+mPVZDmZZoEpVbgayK7WHczhMTEg=" }
                 });
 
             migrationBuilder.InsertData(

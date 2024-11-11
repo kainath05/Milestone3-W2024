@@ -1,4 +1,5 @@
-﻿using HPlusSport.Security.Web.Models;
+﻿using HPlusSport.Security.Web.Classes;
+using HPlusSport.Security.Web.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -33,8 +34,8 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<ActionResult> Login(string email, string password)
     {
-        var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
-        if (user == null)
+        var user = _context.Users.FirstOrDefault(u => u.Email == email);
+        if (user == null || PasswordHelper.VerifyPassword(password, new HashInformation(user.Hash, user.Salt)) == false)
         {
             ViewData["Message"] = "User name or password invalid";
             return View();
