@@ -10,9 +10,8 @@ namespace HPlusSport.Security.Web.Controllers;
 * Assessment: 	Milestone 3
 * Created by: 	Kainath Ahmed - 2268774
 * Date: 		<11> <November> 2024
-* Class Name: 	HomeController.cs
-* Description: 	Explain what the class stores and its functionality. 
-* Time Task B):	Record how long did this tutorial take you to do without breaks, in hours. 
+* Class Name: 	AccountController.cs
+* Description:  Controls login and logout of users.
 */
 public class AccountController : Controller
 {
