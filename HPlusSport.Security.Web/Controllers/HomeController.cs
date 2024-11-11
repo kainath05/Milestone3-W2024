@@ -4,6 +4,15 @@ using System.Diagnostics;
 
 namespace HPlusSport.Security.Web.Controllers;
 
+/*Course: 		Web Programming 3
+* Assessment: 	Milestone 3
+* Created by: 	Kainath Ahmed - 2268774
+* Date: 		<11> <November> 2024
+* Class Name: 	HomeController.cs
+* Description: 	Explain what the class stores and its functionality. 
+* Time Task B):	Record how long did this tutorial take you to do without breaks, in hours. 
+*/
+
 public class HomeController : Controller
 {
     public IActionResult Index()
