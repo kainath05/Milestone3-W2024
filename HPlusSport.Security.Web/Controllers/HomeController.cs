@@ -10,7 +10,7 @@ namespace HPlusSport.Security.Web.Controllers;
 * Date: 		<11> <November> 2024
 * Class Name: 	HomeController.cs
 * Description: 	Shows the home page. 
-* Time Task B):	Record how long did this tutorial take you to do without breaks, in hours. 
+* Time Task B):	2 hours.
 */
 
 public class HomeController : Controller
