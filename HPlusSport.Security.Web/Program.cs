@@ -12,9 +12,17 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     .AddCookie(options =>
     {
         options.LoginPath = new PathString("/Account/Login");
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+        options.Cookie.SameSite = SameSiteMode.Strict;
     });
 
-builder.Services.AddSession(); //deleted the cookie same site to make csrf to work
+builder.Services.AddSession(options =>
+{
+    options.Cookie.HttpOnly = true;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    options.Cookie.SameSite = SameSiteMode.Strict;
+}); //deleted the cookie same site to make csrf to work
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<ShopContext>(options =>
